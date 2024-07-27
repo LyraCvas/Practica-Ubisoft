@@ -1,11 +1,15 @@
 let nombreJuego = juegos.nombre;
 
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      renderBullet:  function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      // dynamicBullets: true,
+      // dynamicMainBullets: 3,
+      renderBullet:  function (index, className){
+        //console.log(juegos[index].nombre)
+        return `<span class="ltrs-blanco ${className}">${juegos[index].nombre}</span>`;
       },
     },
     navigation: {
