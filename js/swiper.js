@@ -28,10 +28,30 @@ var swiper = new Swiper(".mySwiper", {
 
   var swiper = new Swiper(".mySwiper2", {
     loop: true,
-    slidesPerView: 5,
-    centeredSlides:true,
+    slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    400: {
+      slidesPerView: 2
+    },
+    // when window width is >= 320px
+    600: {
+      slidesPerView: 3
+    },
+    // when window width is >= 480px
+    800: {
+      slidesPerView: 4
+      
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 5      
+    }
+  },
+    //centeredSlides:true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
     navigation: {
       nextEl: ".swiper-button-next",

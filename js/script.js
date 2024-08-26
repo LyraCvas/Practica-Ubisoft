@@ -33,7 +33,7 @@ let caratula = juegos.caratula;
 
 juegos.forEach((juego)=>{
     slider2.innerHTML+=`
-    <article class="swiper-slide slider">
+    <article class="swiper-slide slider carta-juegos">
             <img
               class="caratula-juego"
               src="${juego.caratula}"
