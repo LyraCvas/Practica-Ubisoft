@@ -360,6 +360,7 @@ body {
 }
 
 .cont-articulos{
+  width: 82%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 25px;
@@ -394,4 +395,43 @@ body {
 }
 .articulos-cards:first-child .img-articulos-cards{
   width: 100%;
+}
+
+.articulos-cards:hover div a {
+  text-decoration:underline;
+}
+
+/* Ubisoft Store */
+
+.cont-ubistore{
+  width: 82%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  @media (width < 780px) {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.ubistore-card{
+  position: relative;
+  aspect-ratio: 4.2/5;
+  overflow: hidden;
+}
+.ubistore-card img{
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ubistore-card a{
+  width: 100%;
+  padding: 0 5%;
+  position: absolute;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
 }
