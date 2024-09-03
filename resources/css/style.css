@@ -1,344 +1,587 @@
 :root {
-  --color-fucc: rgb(197, 21, 130);
-  --color-black: rgb(20, 19, 19);
-  --color-gold: rgb(186, 129, 0);
-  --color-orange: rgb(249, 67, 8);
-  --color-blue: rgb(1, 106, 164);
-  --color-turquesa: rgb(0, 124, 124);
+    --color-fucc: rgb(197, 21, 130);
+    --color-black: rgb(20, 19, 19);
+    --color-gold: rgb(186, 129, 0);
+    --color-orange: rgb(249, 67, 8);
+    --color-blue: rgb(1, 106, 164);
+    --color-turquesa: rgb(0, 124, 124);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+
 /* For browsers that support clamp and container queries */
+
 @supports (font-size: clamp(1rem, 1cqi, 1rem)) {
-  :root {
-    --fs-sm: clamp(0.81rem, 0.06cqi + 0.8rem, 0.84rem);
-    --fs-base: clamp(1rem, 0.22cqi + 0.95rem, 1.13rem);
-    --fs-md: clamp(1.23rem, 0.46cqi + 1.13rem, 1.5rem);
-    --fs-lg: clamp(1.52rem, 0.83cqi + 1.33rem, 2rem);
-    --fs-xl: clamp(1.88rem, 1.37cqi + 1.57rem, 2.66rem);
-    --fs-xxl: clamp(2.32rem, 2.15cqi + 1.83rem, 3.55rem);
-    --fs-xxxl: clamp(2.86rem, 3.27cqi + 2.12rem, 4.73rem);
-  }
-}
-/* For browsers that don't support clamp or container queries */
-@supports not (font-size: clamp(1rem, 1cqi, 1rem)) {
-  :root {
-    --fs-sm: 0.81rem;
-    --fs-base: 1rem;
-    --fs-md: 1.23rem;
-    --fs-lg: 1.52rem;
-    --fs-xl: 1.88rem;
-    --fs-xxl: 2.32rem;
-    --fs-xxxl: 2.86rem;
-  }
-  @media screen and (min-width: 1280px) {
-    :root {
-      --fs-sm: 0.84rem;
-      --fs-base: 1.13rem;
-      --fs-md: 1.5rem;
-      --fs-lg: 2rem;
-      --fs-xl: 2.66rem;
-      --fs-xxl: 3.55rem;
-      --fs-xxxl: 4.73rem;
+     :root {
+        --fs-sm: clamp(0.81rem, 0.06cqi + 0.8rem, 0.84rem);
+        --fs-base: clamp(1rem, 0.22cqi + 0.95rem, 1.13rem);
+        --fs-md: clamp(1.23rem, 0.46cqi + 1.13rem, 1.5rem);
+        --fs-lg: clamp(1.52rem, 0.83cqi + 1.33rem, 2rem);
+        --fs-xl: clamp(1.88rem, 1.37cqi + 1.57rem, 2.66rem);
+        --fs-xxl: clamp(2.32rem, 2.15cqi + 1.83rem, 3.55rem);
+        --fs-xxxl: clamp(2.86rem, 3.27cqi + 2.12rem, 4.73rem);
     }
-  }
 }
+
+
+/* For browsers that don't support clamp or container queries */
+
+@supports not (font-size: clamp(1rem, 1cqi, 1rem)) {
+     :root {
+        --fs-sm: 0.81rem;
+        --fs-base: 1rem;
+        --fs-md: 1.23rem;
+        --fs-lg: 1.52rem;
+        --fs-xl: 1.88rem;
+        --fs-xxl: 2.32rem;
+        --fs-xxxl: 2.86rem;
+    }
+    @media screen and (min-width: 1280px) {
+         :root {
+            --fs-sm: 0.84rem;
+            --fs-base: 1.13rem;
+            --fs-md: 1.5rem;
+            --fs-lg: 2rem;
+            --fs-xl: 2.66rem;
+            --fs-xxl: 3.55rem;
+            --fs-xxxl: 4.73rem;
+        }
+    }
+}
+
 
 /* Fuentes */
 
 .ltrs-sm {
-  font-size: var(--fs-sm);
+    font-size: var(--fs-sm);
 }
+
 .ltrs-base {
-  font-size: var(--fs-base);
+    font-size: var(--fs-base);
 }
+
 .ltrs-md {
-  font-size: var(--fs-md);
+    font-size: var(--fs-md);
 }
+
 .ltrs-lg {
-  font-size: var(--fs-lg);
+    font-size: var(--fs-lg);
 }
+
 .ltrs-xl {
-  font-size: var(--fs-xl);
+    font-size: var(--fs-xl);
 }
+
 .ltrs-xxl {
-  font-size: var(--fs-xxl);
+    font-size: var(--fs-xxl);
 }
+
 .ltrs-xxxl {
-  font-size: var(--fs-xxxl);
+    font-size: var(--fs-xxxl);
 }
+
 .ltrs-bld {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 .a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 
 /* Colores de fuente */
+
 .ltrs-blanco {
-  color: #fff4f4;
+    color: #fff4f4;
 }
 
-.ltrs-negras{
-  color:#252525
+.ltrs-negras {
+    color: #252525
 }
+
+
 /* Colores de fuente Fin */
 
 .flex {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 html,
 body {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .swiper {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* background: #fff; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-pagination {
-  min-width: 90%;
-  height: 30px;
-  display: flex;
-  gap: 25px;
-  justify-content: space-evenly;
+    min-width: 90%;
+    height: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-evenly;
 }
 
 .swiper-pagination-bullet {
-  width: 10%;
-  min-width: 200px;
-  height: 100%;
-  border-radius: 1px;
-  padding: 5px;
-  text-align: center;
-  font-size: var(--fs-base);
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+    width: 10%;
+    min-width: 200px;
+    height: 100%;
+    border-radius: 1px;
+    padding: 5px;
+    text-align: center;
+    font-size: var(--fs-base);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #007aff;
+    color: #fff;
+    background: #007aff;
 }
 
+
 /* Estilos de los botones */
+
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
-  top: 90%;
-  background-color: rgba(255, 255, 255, 0.137);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  padding: 30px 40px 30px 40px;
-  transition: background-color 0.5s ease;
+    position: absolute;
+    top: 90%;
+    background-color: rgba(255, 255, 255, 0.137);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 30px 40px 30px 40px;
+    transition: background-color 0.5s ease;
 }
+
+
 /* Estilos de posicionamiento */
+
 .swiper-button-prev {
-  left: 0;
-  border-radius: 0 25px 25px 0;
+    left: 0;
+    border-radius: 0 25px 25px 0;
 }
+
+
 /* Estilos de posicionamiento */
+
 .swiper-button-next {
-  right: 0;
-  border-radius: 25px 0 0 25px;
+    right: 0;
+    border-radius: 25px 0 0 25px;
 }
+
+
 /* Hover de los botones laterales */
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(255, 255, 255, 0.39);
 }
 
 .slider {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  display: grid;
-  place-items: center;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
 }
 
 .inner-slider {
-  width: 100%;
-  display: grid;
-  justify-items: center;
-  gap: 10%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 10%;
 }
 
 .title-juego {
-  width: 90%;
+    width: 90%;
 }
 
 .parrafo-juego {
-  width: 90%;
+    width: 90%;
 }
 
 .second-banner {
-  position: relative;
-  background-image: url("https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7u0o3i84kn2M0zywawe5fA/7619c18f6e094c41d6ce0c862b1255be/Ubidotcom-Secondary_Ubisoft__XDefiant-S01_June24_1920x680_desk_Nologo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 280px;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    background-image: url("https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7u0o3i84kn2M0zywawe5fA/7619c18f6e094c41d6ce0c862b1255be/Ubidotcom-Secondary_Ubisoft__XDefiant-S01_June24_1920x680_desk_Nologo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ubi-plus-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 150px;
-  z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 150px;
+    z-index: 100;
 }
 
 .ubi-plus-img.grande {
-  max-width: 250px;
+    max-width: 250px;
 }
 
 .inner-second-banner {
-  display: grid;
-  justify-items: center;
-  gap: 25px;
+    display: grid;
+    justify-items: center;
+    gap: 25px;
 }
+
 
 /* Botones */
 
+
 /* Estilo principal del boton */
+
 .btn-prim {
-  position: relative;
-  display: flex;
-  height: 50px;
-  padding-inline: 15px;
-  border-radius: 30px;
-  align-items: center;
-  overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 50px;
+    padding-inline: 15px;
+    border-radius: 30px;
+    align-items: center;
+    overflow: hidden;
 }
 
 .btn-prim::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 50px;
-  scale: 0;
-  transition: background-color 0.4s ease, scale 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    scale: 0;
+    transition: background-color 0.4s ease, scale 0.2s ease-in-out;
 }
 
 .btn-prim:hover::after {
-  display: block;
-  background-color: #f1f1f1f1;
-  scale: 1;
+    display: block;
+    background-color: #f1f1f1f1;
+    scale: 1;
 }
 
 .btn-prim span {
-  display: flex;
-  z-index: 2;
+    display: flex;
+    z-index: 2;
 }
 
-.btn-prim:hover > span {
-  transition: color 1s;
+.btn-prim:hover>span {
+    transition: color 1s;
 }
+
 
 /* Clases de los colores */
+
 .btn-fucc {
-  background-color: var(--color-fucc);
-}.btn-fucc:hover > span {
-  color: var(--color-fucc);
+    background-color: var(--color-fucc);
+}
+
+.btn-fucc:hover>span {
+    color: var(--color-fucc);
 }
 
 .btn-black {
-  background-color: var(--color-black);
-}.btn-black:hover > span {
-  color: var(--color-black);
+    background-color: var(--color-black);
+}
+
+.btn-black:hover>span {
+    color: var(--color-black);
 }
 
 .btn-gold {
-  background-color: var(--color-gold);
-}.btn-gold:hover > span {
-  color: var(--color-gold);
+    background-color: var(--color-gold);
+}
+
+.btn-gold:hover>span {
+    color: var(--color-gold);
 }
 
 .btn-orange {
-  background-color: var(--color-orange);
-}.btn-orange:hover > span {
-  color: var(--color-orange);
+    background-color: var(--color-orange);
+}
+
+.btn-orange:hover>span {
+    color: var(--color-orange);
 }
 
 .btn-blue {
-  background-color: var(--color-blue);
-}.btn-blue:hover > span {
-  color: var(--color-blue);
+    background-color: var(--color-blue);
+}
+
+.btn-blue:hover>span {
+    color: var(--color-blue);
 }
 
 .btn-turquesa {
-  background-color: var(--color-turquesa);
-}.btn-turquesa:hover > span {
-  color: var(--color-turquesa);
+    background-color: var(--color-turquesa);
 }
+
+.btn-turquesa:hover>span {
+    color: var(--color-turquesa);
+}
+
+
 /* Hasta aqui las Clases de los colores de los botones */
+
 
 /* Segundo carrusel */
 
-
-.cont-cartas-juegos{
-  width: 80%;
-  padding-bottom: 5%;
+.cont-cartas-juegos {
+    width: 80%;
+    padding-bottom: 5%;
 }
 
-.carta-juegos{  
-  gap: 7px;
+.carta-juegos {
+    gap: 7px;
 }
 
-.caratula-juego{
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  min-width: 200px;
-  width: 30%;
-  max-width: 280px;
+.caratula-juego {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    min-width: 200px;
+    width: 30%;
+    max-width: 280px;
 }
 
-.sect{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding: 15px 0;  
+.sect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
 }
+
 
 /* .centered-btn{
   position: absolute;
   bottom: 5%;
 } */
+
+
+/* ---------------INICIO NAV--------------------- */
+
+.contedor_nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+.logo-nav {
+    height: 1.8rem;
+}
+
+.logo-nav img {
+    height: 100%;
+    padding: 0 50px;
+}
+
+.contenedor-enlaces-nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding: 0 2%;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+}
+
+.btn-nav a {
+    height: 100%;
+    padding: 1.1rem 2.18rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-nav:hover {
+    background-color: #fff;
+}
+
+.btn-nav a:hover {
+    color: #000;
+}
+
+.busqueda-nav {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.btn-decarga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid violet; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-decarga p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-decarga i {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.busqueda-btn,
+.user-btn {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda-btn i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.user-btn i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.flex-jugar {
+    width: 90%;
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    padding: 2% 3%;
+    cursor: pointer;
+    display: none;
+}
+
+.flex-jugar.activo {
+    display: flex;
+}
+
+.nav_cont1 {
+    width: 25%;
+    /* border: 2px solid red; */
+    padding: 0 5px;
+}
+
+.nav_cont1 a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #000000c2;
+    padding: 4% 0;
+}
+
+.nav_cont1 a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.cont-flex-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.separador {
+    height: 0.5px;
+    background-color: #0000001e;
+    margin: 4% 0;
+}
+
+.flex-jugar p {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cont-flex-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.nav_cont3 {
+    width: 25%;
+    /* border: 2px solid rgb(212, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.nav_cont3 a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #000000c2;
+    padding: 4% 0;
+}
+
+.nav_cont3 a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.nav_cont4 {
+    width: 50%;
+    /* border: 2px solid rgb(0, 255, 128); */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.img-cont4 {
+    width: 100%;
+}
+
+.img-cont4 img {
+    width: 100%;
+}

@@ -1,34 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./resources/css/style.css" />
     <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
     <title>Ubisoft</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
+    <!-- Nav -->
+
+    <nav class="contedor_nav" id="nav">
+
+        <!-- responsive botones -->
+        <!-- <div class=" contenedor contenedor-botones-menu">
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class='bx bx-menu'></i></button>
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class='bx bx-x'></i></button>
+
+        </div> -->
+        <!-- responsive botones -->
+
+
+        <div class="contenedor contenedor-enlaces-nav">
+
+            <section class="logo-nav">
+                <img src="./resources/img/ubisoft-removebg-preview.png" alt="">
+            </section>
+
+            <section class="btn-nav" id="btn-jugar">
+                <a href="#">JUGAR</a>
+
+            </section>
+
+            <section class="btn-nav" id="btn-tienda">
+                <a href="#">TIENDA</a>
+
+            </section>
+
+            <section class="btn-nav" id="btn-explora">
+                <a href="#">EXPLORA</a>
+
+            </section>
+
+            <section class="btn-nav" id="btn-ayuda">
+                <a href="#">AYUDA</a>
+
+            </section>
+
+        </div>
+
+
+        <div class="busqueda-nav">
+
+            <section class="btn-decarga">
+                <p>Descargar Ubisoft Connect</p>
+                <i class='bx bxs-download'></i>
+            </section>
+
+            <section class="busqueda-btn">
+                <i class='bx bx-search'></i>
+            </section>
+
+            <section class="user-btn">
+                <i class='bx bxs-user-rectangle'></i>
+            </section>
+
+        </div>
+
+
+
+        <div class="contedor contenedor-jugar">
+            <div class="flex-jugar" id="flex-jugar">
+                <div class="nav_cont1">
+                    <section class="cont-flex-1">
+                        <p>Explorar por categorias</p>
+                        <section class="separador"></section>
+                        <a href="">Especiales</a>
+                        <a href="">Nuevo a antiguo</a>
+                        <a href="">Juega totalmente gratis</a>
+
+                    </section>
+
+                    <section class="cont-flex-2">
+                        <p>Explorar por plataformas</p>
+                        <section class="separador"></section>
+                        <a href="">PC</a>
+                        <a href="">Xbox</a>
+                        <a href="">PlayStation</a>
+                        <a href="">Nintendo Switch</a>
+                        <a href="">Virtual Reality</a>
+                        <a href="">Mobile</a>
+                    </section>
+
+                </div>
+
+                <div class="nav_cont3">
+                    <p>Explorar por juego</p>
+                    <section class="separador"></section>
+                    <a href="">Star Wars Outlaws</a>
+                    <a href="">Assassin's Creed Shadows</a>
+                    <a href="">XDEFIANT</a>
+                    <a href="">Anno 117: Pax Romana</a>
+                    <a href="">Avatar: Frontiers of Pandora</a>
+                    <a href="">Skull and Bones</a>
+                    <a href="">Prince of Persia: The Lost Crown</a>
+                    <a href="">The Crew Motorfest</a>
+                    <a href="">Assassin's Creed Mirage</a>
+                    <a href="">Just Dance 2024 Edition</a>
+
+                </div>
+
+
+                <div class="nav_cont4">
+                    <p>Descubre Ubisoft+</p>
+                    <section class="img-cont4">
+                        <img src="./resources/img/ubi-global_nav-discover_ubiplus-play-4games-image.avif" alt="">
+
+                    </section>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </nav>
+
+    <!-- Nav -->
+
     <div class="swiper mySwiper">
-      <img
-        class="ubi-plus-img grande"
-        src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png"
-        alt="Logo-ubi"
-        loading="lazy"
-      />
-      <section class="swiper-wrapper" id="slider1">
-        <!-- <article
+        <img class="ubi-plus-img grande" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png" alt="Logo-ubi" loading="lazy" />
+        <section class="swiper-wrapper" id="slider1">
+            <!-- <article
           class="swiper-slide slider"
           style="
             background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2NL1KvBfSuS7xDcVBM7AKQ/d0b062b51eaded9319932f31451756c1/ac_shadows_std_keyart_no_logo.jpg');
@@ -37,40 +154,34 @@
         <h2 class="ltrs-blanco">Assasins Creed</h2>
         <p></p>
         </article> -->
-      </section>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+        </section>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     <!-- Segundo Banner -->
     <section class="second-banner">
-      <img
-        class="ubi-plus-img"
-        src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png"
-        alt="Logo-ubi"
-        loading="lazy"
-      />
-      <div class="inner-second-banner">
-        <h2 class="ltrs-blanco ltrs-lg ltrs-bld">
-          ¡XDefiant ya está disponible!
-        </h2>
-        <p class="ltrs-blanco ltrs-md">
-          Los miembros de Ubisoft+ Premium recibirán aspectos y contenido
-          exclusivo.
-        </p>
-        <a class="btn-prim ltrs-blanco ltrs-base ltrs-bld a btn-fucc" href="">
-          <span>ÚNETE YA</span>
-        </a>
-      </div>
+        <img class="ubi-plus-img" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png" alt="Logo-ubi" loading="lazy" />
+        <div class="inner-second-banner">
+            <h2 class="ltrs-blanco ltrs-lg ltrs-bld">
+                ¡XDefiant ya está disponible!
+            </h2>
+            <p class="ltrs-blanco ltrs-md">
+                Los miembros de Ubisoft+ Premium recibirán aspectos y contenido exclusivo.
+            </p>
+            <a class="btn-prim ltrs-blanco ltrs-base ltrs-bld a btn-fucc" href="">
+                <span>ÚNETE YA</span>
+            </a>
+        </div>
     </section>
     <!-- Slider mas juegos -->
     <section class="sect">
-      <article>
-        <h2 class="ltrs-lg ltrs-negras">MAS JUEGOS</h2>
-      </article>
-      <div class="swiper mySwiper2">
-        <section class="swiper-wrapper cont-cartas-juegos" id="slider2">
-          <!-- <article class="swiper-slide slider">
+        <article>
+            <h2 class="ltrs-lg ltrs-negras">MAS JUEGOS</h2>
+        </article>
+        <div class="swiper mySwiper2">
+            <section class="swiper-wrapper cont-cartas-juegos" id="slider2">
+                <!-- <article class="swiper-slide slider">
             <img
               class="caratula-juego"
               src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg?imwidth=360"
@@ -84,22 +195,24 @@
               <a class="ltrs-base ltrs-bld a ltrs-negras" href=""><i class="fa-brands fa-windows"></i></a>
             </div>
           </article> -->
-        </section>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-      <div class="centered-btn">
-        <a class="btn-prim btn-fucc a ltrs-blanco ltrs-bld" href=""
-          ><span>VER TODOS LOS JUEGOS</span></a
+            </section>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="centered-btn">
+            <a class="btn-prim btn-fucc a ltrs-blanco ltrs-bld" href=""><span>VER TODOS LOS JUEGOS</span></a
         >
       </div>
     </section>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <script src="./js/juegos.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
