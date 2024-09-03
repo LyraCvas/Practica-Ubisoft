@@ -78,6 +78,7 @@
 }
 .a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Colores de fuente */
@@ -87,6 +88,10 @@
 
 .ltrs-negras{
   color:#252525
+}
+
+.ltrs-gray{
+  color: #4e4b4b;
 }
 /* Colores de fuente Fin */
 
@@ -238,10 +243,12 @@ body {
   position: relative;
   display: flex;
   height: 50px;
+  width: max-content;
   padding-inline: 15px;
   border-radius: 30px;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .btn-prim::after {
@@ -313,7 +320,7 @@ body {
 
 .cont-cartas-juegos{
   width: 80%;
-  padding-bottom: 5%;
+  padding-bottom: 120px;
 }
 
 .carta-juegos{  
@@ -334,14 +341,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 500px;
   gap: 15px;
-  padding: 15px 0;  
+  padding: 50px 0;  
 }
 
-/* .centered-btn{
+.sect-tlts{
+  text-align: center;
+  padding-bottom: 25px ;
+}
+
+.centered-btn{
   position: absolute;
-  bottom: 5%;
-} */
+  z-index: 111;
+  bottom: 10%;
+}
+.bg-color-1{
+  background-color: rgb(226, 226, 226);
+}
+.bg-color-2{
+  background-color:rgb(223, 220, 220);
+}
 
 
 /* Seccion de noticias */
@@ -352,6 +372,9 @@ body {
   padding: 15px 0;
   gap: 15px;
   list-style: none;
+  @media (width < 780px) {
+    flex-direction: column;
+  }
 }
 
 .notis .notis-items:hover a{
@@ -363,7 +386,7 @@ body {
   width: 82%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 25px;
+  gap: 35px;
   
   @media (width < 1400px) {
      grid-template-columns: repeat(2,1fr);
@@ -380,7 +403,7 @@ body {
   display: flex;  
   gap: 10px;
   width: 100%;
-  min-width: 380px;
+  min-width: 300px;
   max-width: 500px;
 }
 
@@ -434,4 +457,239 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 3;
+}
+
+/* kit ubi */
+
+.kit-ubi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  @media (width < 780px) {
+    padding: 50px 0;
+    flex-direction: column-reverse;
+  }
+}
+
+.kit-1{
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  gap: 15px;
+  align-items: start;
+  @media (width < 780px) {
+    padding-left: 0%;
+    align-items: center;
+  }
+}
+.kit-2{
+  width: 82%;
+}
+.kit-2 img{
+  padding: 5% 20% 5% 0;
+  width: 100%;
+  @media (width < 780px) {
+    padding: 0%;
+  }
+}
+
+.bg-color-3{
+  background: #091225;
+}
+
+.ubi-connect{
+  display: flex;
+  padding: 50px 0;
+  gap: 15px;
+   @media (width < 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+}
+
+.ubi-connect-img{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  padding-left: 150px;
+  @media (width < 1000px) {
+    width: 50%;
+  }
+  @media (width < 900px) {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+}
+
+.ubi-connect-img img{
+  width: 30%;
+  min-width: 200px;
+  aspect-ratio: 16/9;
+  flex: 1;
+  object-fit: contain;
+  @media (width < 1000px) {
+    width: 50%;
+    min-width: 250px;
+  }
+}
+
+.ubi-connect-text{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  flex: content;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 100px;
+  @media (width < 780px) {
+    width: 70%;
+    padding-right: 0%;
+    align-items: center;
+  }
+}
+
+.rrss{
+  background: #000;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0 25px;
+  @media (width < 780px) {
+    grid-template-columns: repeat(1,1fr);
+  .txt-lateral{
+    display: none;
+    }
+  }
+}
+
+.txt-lateral{
+  justify-self: baseline;
+}
+.rrss-cont{
+  display: inline-flex;
+  list-style: none;
+
+}
+
+.rrss-btn{
+  display: grid;
+  align-content: center;
+  height: 35px;
+  width: 35px;
+  margin: 15px;
+  text-align: center;
+  color: #000;
+  background-color: #fff4f4;
+  border-radius: 35px;
+  
+}
+
+/* Footer */
+.footer-cont{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* gap: 10px; */
+  background-color: #1b1b1b;
+  padding: 50px 50px;
+  @media (width < 780px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.footer-cont div{
+  margin: 20px 0;
+}
+
+.icon-ubisoft-logo-desktop{
+  fill: #fff;
+  width: 50%;
+  max-width: 250px;
+}
+
+.footer-ul{
+  list-style: none;
+  display: grid;
+  gap: 15px;
+}
+
+.footer-ul li a:hover {
+  text-decoration:underline;
+}
+
+.foot-logo{
+  width: 25%;
+  @media (width < 780px) {
+    width: 100%;
+     text-align: center;
+  }
+}
+
+.foot-ubi-connect{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  @media (width < 780px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.foot-languages{
+  width: 25%;
+  text-align: right;
+  @media (width < 780px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.foot-legal{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+  @media (width < 780px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer-menu{
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 15px;
+  width: 50%;
+  @media (width < 780px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.foot-privacy{
+  width: 25%;
+  display: grid;
+  gap: 35px;
+  justify-items: end;
+  text-align: end;
+  @media (width < 780px) {
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
 }
